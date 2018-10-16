@@ -1,4 +1,5 @@
 # ubnt-enable_ct
+
 For the script to work you will need sshpass
 
 * ubuntu
@@ -10,7 +11,7 @@ apt-get install sshpass
 yum --enablerepo = epel -y install sshpass
 
 # Execution
-chmod + x ubnt-enable_ct.sh
+chmod +x ubnt-enable_ct.sh
 
 ./ubnt-enable_ct.sh xxx.xxx.xxx
 
