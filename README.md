@@ -2,7 +2,7 @@
 
 For the script to work you will need sshpass
 
-* ubuntu
+* Ubuntu
 
 apt-get install sshpass
 
