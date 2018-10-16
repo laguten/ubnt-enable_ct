@@ -4,8 +4,7 @@
 IP=$1;
 LOGIN=ubnt
 PASSWORD=ubnt
-#PASSWORD=ubnt
-contador=0;
+counter=0;
 
 # Checks if parameter is passed
 # Simular  as https://github.com/tiagoalucard/ubnt-mf-clean
@@ -28,7 +27,7 @@ for i in `seq 0 25`; do
     status=$?;
   if [ $status == 0 ]; then
     echo -e "$IP.$i \e[34m CT enabled\e[m";
-    let contador=$contador+1;
+    let counter=$counter+1;
   else
     echo -e "$IP.$i \e[31m CT not enabled\e[m";
   fi;
@@ -38,5 +37,5 @@ for i in `seq 0 25`; do
 done;
 
 # If you comment the lines above to speed up the process you can comment on the last echo that has become meaningless
-echo -e "Compliance Test enabled for \e[34m$contador\e[m STA.";
+echo -e "Compliance Test enabled for \e[34m$counter\e[m STA.";
 fi;
